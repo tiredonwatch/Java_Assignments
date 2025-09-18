@@ -1,4 +1,4 @@
-// Base class
+
 class Shape {
     public void printShape() {
         System.out.println("This is shape");
@@ -29,16 +29,15 @@ class Square extends Rectangle {
 // Main class to test the hierarchy
 public class Ques1 {
     public static void main(String[] args) {
-        // Creating object of Square
+        
+
         Square sq = new Square();
-
-        // Calling method of Shape class
         sq.printShape();
-
-        // Calling method of Rectangle class
         sq.printRectangle();
-
-        // (Optional) Calling its own method
         sq.printSquare();
+
+        Circle cr = new Circle();
+        cr.printShape();
+        cr.printCircle();
     }
 }
